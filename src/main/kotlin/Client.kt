@@ -9,7 +9,7 @@ import retrofit2.http.Path
 
 class Client(
     private val apiKey: String,
-    private val baseUrl: String = "https://api.example.com"
+    private val baseUrl: String = "http://localhost:8001"
 ) {
     private val retrofit: Retrofit = createRetrofit()
     private val api: ApiService = retrofit.create(ApiService::class.java)
